@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #41644a;
+  --secondary-color: #0d4715;
+  --btn-color: #e9762b;
+  --font-color: #f1f0e9;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+}
+body {
+  font-family: var(--secondary-font);
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  background-color: var(--font-color);
+  width: 70vw;
+  margin: 0 auto;
+  height: 90vh;
+  margin-top: 2rem;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: var(--primary-font);
+}
+.input_container {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: var(--font-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#city {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: var(--primary-font);
+}
+
+#submit {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  background-color: var(--btn-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--font-color);
+  font-family: var(--primary-font);
+  cursor: pointer;
+  width: 40%;
+  transition: all 0.3s;
+}
+
+#submit:hover {
+  background-color: var(--font-color);
+  color: var(--btn-color);
+}
+
+.result_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  width: 80%;
+  transition: all 0.3s;
+  display: none;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.result li {
+  list-style: none;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--primary-font);
+  color: var(--font-color);
+}
+
+.invalid {
+  color: var(--btn-color);
+  font-size: 1.2rem;
+  font-family: var(--primary-font);
+  margin-top: 1rem;
+  font-weight: 800;
+  display: none;
+}
