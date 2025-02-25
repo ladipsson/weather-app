@@ -118,6 +118,7 @@ h2 {
   main {
     width: 90vw;
     height: 100%;
+    padding: 1rem 0.5rem;
   }
   .input_container {
     width: 90%;
