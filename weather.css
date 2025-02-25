@@ -113,3 +113,22 @@ h2 {
   font-weight: 800;
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 90vw;
+    height: 100%;
+  }
+  .input_container {
+    width: 90%;
+  }
+  #submit {
+    width: 100%;
+  }
+  .result_container {
+    width: 90%;
+  }
+  .result {
+    grid-template-columns: 1fr 1fr;
+  }
+}
